@@ -10,6 +10,7 @@
 	</head>
 	<body>
 		<h1>Management</h1>
+		<a href="/site/management/contact-us">Contact Us</a> - use this set up the response email address(es) for your contact us form<br/>
 		<a href="/site/management/site-navigation">Site navigation</a><br/>
 		<a href="/site/management/pages">Pages</a><br/>
 	</body>

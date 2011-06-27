@@ -20,7 +20,7 @@
 		<jettyVersion>7.2.0.v20101020</jettyVersion>
 
 		<!--gae.home>/home/mhunter/appengine-java-sdk-1.4.0/</gae.home -->
-		<gae.home>d:/java/appengine-java-sdk-1.4.3/</gae.home>
+		<gae.home>d:/java/appengine-java-sdk-1.5.1/</gae.home>
 	</properties>
 
 	<pluginRepositories>
@@ -35,7 +35,7 @@
 		<dependency>
 			<groupId>uk.co.idinetwork</groupId>
 			<artifactId>core</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
+			<version>0.0.2-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>javax.transaction</groupId>

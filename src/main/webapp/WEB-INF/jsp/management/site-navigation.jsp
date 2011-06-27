@@ -13,10 +13,10 @@
 		<table>
 			<tr>
 				<td width="50%" valign="top">
-					<h2>Top Navigation</h2>
+					<h2>Level 1 Navigation</h2>
 					<c:choose>
 						<c:when test="${empty topSiteNavigation}">
-							Top navigation has not been defined.
+							Level 1 navigation has not been defined.
 						</c:when>
 						<c:otherwise>
 							<table>
@@ -26,7 +26,7 @@
 								</tr>
 								<c:forEach items="${topSiteNavigation}" var="navigation">
 									<tr>
-										<td>${navigation.title}</td>
+										<td>${navigation.title} (${navigation.sortOrder})</td>
 										<td>
 											<form action="/site/management/site-navigation/delete/top/${navigation.id}" method="POST">
 												<input type="submit" value="delete"/>
@@ -40,14 +40,15 @@
 					<br/>
 					<form method="post" action="/site/management/site-navigation/add/top">
 						Title: <input type="text" name="title"/>
+						Sort Order: <input type="text" name="sortOrder"/>
 						<input type="submit" value="Add"/>
 					</form>
 				</td>
 				<td width="50%" valign="top">
-					<h2>Side Navigation</h2>
+					<h2>Level 2 Navigation</h2>
 					<c:choose>
 						<c:when test="${empty sideSiteNavigation}">
-							Side navigation has not been defined.
+							Level 2 navigation has not been defined.
 						</c:when>
 						<c:otherwise>
 							<table>
@@ -57,7 +58,7 @@
 								</tr>
 								<c:forEach items="${sideSiteNavigation}" var="navigation">
 									<tr>
-										<td>${navigation.title}</td>
+										<td>${navigation.title} (${navigation.sortOrder})</td>
 										<td>
 											<form action="/site/management/site-navigation/delete/side/${navigation.id}" method="POST">
 												<input type="submit" value="delete"/>
@@ -71,6 +72,7 @@
 					<br/>
 					<form method="post" action="/site/management/site-navigation/add/side">
 						Title: <input type="text" name="title"/>
+						Sort Order: <input type="text" name="sortOrder"/>
 						<input type="submit" value="Add"/>
 					</form>
 				</td>

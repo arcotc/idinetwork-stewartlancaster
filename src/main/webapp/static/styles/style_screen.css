@@ -18,6 +18,7 @@ body {font-size: 62.5%; margin: 0px auto; padding: 0px; background: url(/static/
 .page-container-1 {width: 770px; margin: 0px auto; padding: 0px; background: url(/static/images/background_layout_1.gif) top left repeat-y; border: solid 1px rgb(100,100,100);}
 .page-container-2 {width: 770px; margin: 0px auto; padding: 0px; background: url(/static/images/background_layout_2.gif) top left repeat-y; border: solid 1px rgb(100,100,100);}
 .page-container-3 {width: 770px; margin: 0px auto; padding: 0px; background: url(/static/images/background_layout_3.gif) top left repeat-y; border: solid 1px rgb(100,100,100);}
+.page-container-3b {width: 770px; margin: 0px auto; padding: 0px; background: url(/static/images/background_layout_3b.gif) top left repeat-y; border: solid 1px rgb(100,100,100);}
 
 /*************************************/
 /* SECTION 2 - HEADER AND NAVIGATION */
@@ -119,8 +120,9 @@ body {font-size: 62.5%; margin: 0px auto; padding: 0px; background: url(/static/
 
 .content2 {float: left; width: 590px; min-height: 500px; margin: 0px; padding: 0px 0px 0px 20px; color: rgb(75,75,75); font-size: 1.0em;}
 .content3 {float: left; width: 590px; min-height: 500px; margin: 0px; padding: 0px 0px 0px 20px; color: rgb(75,75,75); font-size: 1.0em;}
+.content3b {float: left; width: 590px; min-height: 500px; margin: 0px; padding: 0px 0px 0px 20px; color: rgb(75,75,75); font-size: 1.0em;}
 .content2-container, .content3-container {clear: both; float: left; width: 569px; margin: 0px 0px 15px 0px; padding: 0px;}
-.content2-container-1col, .content3-container-1col {overflow: hidden; width: 569px; margin: 0px; padding: 0px;}
+.content2-container-1col, .content3-container-1col {overflow: hidden; width: 720px; margin: 0px; padding: 0px;}
 .content2-container-1col-txtright-200px, .content3-container-1col-txtright-200px {float: right; width: 357px; margin: 0px; padding: 0px;}
 .content2-container-1col-txtright-160px, .content3-container-1col-txtright-160px {float: right; width: 397px; margin: 0px; padding: 0px;}
 .content2-container-1col-txtright-120px, .content3-container-1col-txtright-120px {float: right; width: 437px; margin: 0px; padding: 0px;}
@@ -142,7 +144,9 @@ body {font-size: 62.5%; margin: 0px auto; padding: 0px; background: url(/static/
 .content2-container-3col-txtright-40px, .content3-container-3col-txtright-40px {overflow: hidden; float: right; width: 121px; margin: 0px; padding: 0px;}
 .content2-container-3col-txtright-20px, .content3-container-3col-txtright-20px {overflow: hidden; float: right; width: 141px; margin: 0px; padding: 0px;}
 .content2-container-3col-txtright-10px, .content3-container-3col-txtright-10px {overflow: hidden; float: right; width: 151px; margin: 0px; padding: 0px;}
-.content2-pagetitle, .content3-pagetitle {overflow: hidden; width: 569px; margin: 0px 0px 10px 0px; padding: 0px 0px 2px 0px; border-bottom: solid 3px rgb(88,144,168); color: rgb(88,144,168); font-weight: bold; font-size: 180%;}
+.content2-pagetitle, .content3-pagetitle {overflow: hidden; width: 559px; margin: 0px 0px 10px 0px; padding: 0px 0px 2px 0px; border-bottom: solid 3px rgb(88,144,168); color: rgb(88,144,168); font-weight: bold; font-size: 180%;}
+.content3 .content3-pagetitle {overflow: hidden; width: 559px; margin: 0px 0px 10px 0px; padding: 0px 0px 2px 0px; border-bottom: solid 3px rgb(88,144,168); color: rgb(88,144,168); font-weight: bold; font-size: 180%;}
+.content3b .content3-pagetitle {overflow: hidden; width: 720px; margin: 0px 0px 10px 0px; padding: 0px 0px 2px 0px; border-bottom: solid 3px rgb(88,144,168); color: rgb(88,144,168); font-weight: bold; font-size: 180%;}
 
 /*********************************/
 /* SECTION 6 - COMMON PARAMETERS */
@@ -173,7 +177,10 @@ body {font-size: 62.5%; margin: 0px auto; padding: 0px; background: url(/static/
 .content-subtitle-shade-size3 {margin: 0px; padding: 0px 10px 3px 10px; background-color: rgb(215,215,215); color: rgb(88,144,168); font-weight: bold; font-size: 130%;}
 .content-subtitle-shade-size4 {margin: 0px; padding: 0px 10px 3px 10px; background-color: rgb(215,215,215); color: rgb(88,144,168); font-weight: bold; font-size: 140%;}
 .content-subtitle-shade-size5 {margin: 0px; padding: 0px 10px 3px 10px; background-color: rgb(215,215,215); color: rgb(88,144,168); font-weight: bold; font-size: 150%;}
-.content-txtbox-noshade {margin: 0px; padding: 7px 0px 0px 0px; background-color: rgb(255,255,255);}
+.content3 .content-txtbox-noshade {margin: 0px; padding: 7px 0px 0px 0px; background-color: rgb(255,255,255); width:559px}
+.content3b .content-txtbox-noshade {margin: 0px; padding: 7px 0px 0px 0px; background-color: rgb(255,255,255); width:770px}
+.contactForm-message {font-size:1.3em;}
+#contactForm {font-family: arial, sans serif; font-size:0.8em;color:#4B4B4B}
 .standard-font {font-size:1.3em;}
 .content-txtbox-shade {margin: 0px; padding: 7px 10px 5px 10px; background-color: rgb(235,235,235);}
 
@@ -460,3 +467,9 @@ ul.linklist-indent {margin: -0.3em 0px 0.5em 0px; padding: 0px 0px 0px 10px; lis
 .clear {clear: both;}
 .hide {display: none;}
 br {clear: none;}
+
+table tr td {
+	font-family: arial, sans-serif;
+	font-size: 0.8em;
+	color: #454545;
+}
