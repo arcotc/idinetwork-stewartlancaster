@@ -3,6 +3,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <%@ taglib uri="http://www.springframework.org/tags" prefix="spring" %>
+<%@ taglib uri="http://idinetwork.co.uk/taglibs/idinetwork" prefix="idi"%>
 
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 
@@ -16,8 +17,9 @@
 		<c:when test="${not empty page}">${page.title} | </c:when>
 		<c:when test="${not empty article}">${article.title} | </c:when>
 	</c:choose>
- 	stewartlancasterdrivingschool.co.uk
+ 	<idi:configTag key="site-title"/>
   </title>
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
 </head>
 
 <body>
@@ -28,23 +30,20 @@
 
     <!-- Sitename -->
 		<div class="site-name">
-      <p class="title"><a href="index.html">Stewart&bull;Lancaster</a></p>
-      <p class="subtitle"><a href="index.html">Driving&bull;School</a></p>
+      <p class="title"><a href="/"><idi:configTag key="page-title"/></a></p>
+      <p class="subtitle"><a href="/"><idi:configTag key="page-subtitle"/></a></p>
     </div>
     
     <!-- Site slogan -->
 		<div class="site-slogan-container">
 			<div class="site-slogan">
-      	<p class="title">Helping you reach</p>
-      	<p class="title">your full potential</p>
-      	<!--p class="subtitle">reach you potential</p-->
-      	<!--p class="text">Serving the webcommunity<br />with XHTML/CSS designs</p>
-        <p class="readmore">&rsaquo;&rsaquo;&rsaquo;&nbsp;<a href="/site/about">Find out more about us</a></p-->
+      	<p class="title"><idi:configTag key="page-tagline-1"/></p>
+      	<p class="title"><idi:configTag key="page-tagline-2"/></p>
       </div>
 		</div>
     		 						    		 						
     <!-- Header banner -->		 						    		 						
-		<div><img class="img-header" src="/static/images/header.jpg" alt=""/></div>		
+		<div><img class="img-header" src="<idi:configTag key="page-header-image"/>" alt=""/></div>
 
 	<jsp:include page="includes/navigation2.jsp"/>
     
@@ -56,32 +55,6 @@
 
 	<jsp:include page="includes/mainbody.jsp"/>
 
-      <!-- Text container -->
-			<!--div class="content3-container">
-				<div class="content3-container-3col-left">
-					<p class="content-title-noshade-size3">Lorem Ipsum</p>
-					<p class="content-subtitle-noshade-size1">Lorem Ipsum</p>
-					<div class="content-txtbox-noshade">
-						<p>Lorem ipsum dolor sit amet, adipiscing elit, sed diam nonummy nibh euismod.</p>
-					</div>
-				</div>
-			
-				<div class="content3-container-3col-middle">
-					<p class="content-title-noshade-size3">Lorem Ipsum</p>
-					<p class="content-subtitle-noshade-size1">Lorem Ipsum</p>
-					<div class="content-txtbox-noshade">
-						<p>Lorem ipsum dolor sit amet, adipiscing elit, sed diam nonummy nibh euismod.</p>			 
-					</div>
-        </div>
-
-				<div class="content3-container-3col-right">
-					<p class="content-title-noshade-size3">Lorem Ipsum</p>
-					<p class="content-subtitle-noshade-size1">Lorem Ipsum</p>
-					<div class="content-txtbox-noshade">
-						<p>Lorem ipsum dolor sit amet, adipiscing elit, sed diam nonummy nibh euismod.</p>
-					</div>
-				</div>
-      </div-->
     </div>
 			
 	  <jsp:include page="includes/sidebar.jsp"/>

@@ -18,6 +18,8 @@
 	<bean id="imageRepository" class="uk.co.idinetwork.core.repository.ImageRepositoryImpl" />
 	<bean id="contactUsResponseService" class="uk.co.idinetwork.core.service.ContactUsResponseServiceImpl" />
 	<bean id="contactUsResponseRepository" class="uk.co.idinetwork.core.repository.ContactUsResponseRepositoryImpl" />
+	<bean id="generalService" class="uk.co.idinetwork.core.service.GeneralServiceImpl" />
+	<bean id="generalRepository" class="uk.co.idinetwork.core.repository.GeneralRepositoryImpl" />
 	<bean id="bloggerFeedService" class="uk.co.idinetwork.core.service.BloggerFeedServiceImpl" />
 	<bean id="bloggerFeedRepository" class="uk.co.idinetwork.core.repository.BloggerFeedRepositoryImpl" />
 	<bean id="bloggerService" class="uk.co.idinetwork.core.service.BloggerServiceImpl" />
