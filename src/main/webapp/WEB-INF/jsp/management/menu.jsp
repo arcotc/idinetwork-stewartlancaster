@@ -14,7 +14,7 @@
 	    <div class="topbar" data-scrollspy="scrollspy" >
 	      <div class="topbar-inner">
 	        <div class="container">
-	          <a class="brand" href="#">Management</a>
+	          <a class="brand" href="/site/management">Management</a>
 	          <ul class="nav">
 	            <li class="active"><a href="#overview">Menu</a></li>
 	          </ul>
